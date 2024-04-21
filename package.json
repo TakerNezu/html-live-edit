@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && rollup -c",
+    "build": "tsc",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,15 +23,5 @@
   "homepage": "https://github.com/TakerNezu/live-edit-html#readme",
   "dependencies": {
     "typescript": "^5.4.5"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.24.1",
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }

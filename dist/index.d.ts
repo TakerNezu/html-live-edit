@@ -1,1 +1,4 @@
-export * from './core';
+declare class LiveEditHTML {
+    constructor(selector: string);
+    private changeEditable;
+}

@@ -7,6 +7,7 @@
 </head>
 <body>
 <h1 class="aaa">Welcome to My Sample HTML Page</h1>
+<h1 class="aaa"><span>Welcome to My Sample HTML Page</span></h1>
 <form id="myForm">
     <label for="textInput" class="aaa">Enter your name:</label><br>
     <input type="text" id="textInput" name="name"><br>
@@ -14,14 +15,13 @@
 </form>
 <div id="output"></div>
 
-<script src="/library/index.js"></script>
+<script src="/dist/index.js"></script>
 <script>
-    // import LiveEditHTML from "/dist/index.js";
-    LiveEditHTML().init('.aaa');
+    const liveEditHTML = new LiveEditHTML('.aaa');
 
     // JavaScript code to handle form submission
     document.getElementById("submitButton").addEventListener("click", function() {
-        var name = document.getElementById("textInput").value;
+        const name = document.getElementById("textInput").value;
         document.getElementById("output").innerText = "Hello, " + name + "!";
     });
 </script>
