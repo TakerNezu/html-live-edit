@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+</head>
+<body>
+<h1 class="aaa">Welcome to My Sample HTML Page</h1>
+<form id="myForm">
+    <label for="textInput" class="aaa">Enter your name:</label><br>
+    <input type="text" id="textInput" name="name"><br>
+    <button type="button" id="submitButton">Submit</button>
+</form>
+<div id="output"></div>
+
+<script src="/library/index.js"></script>
+<script>
+    // import LiveEditHTML from "/dist/index.js";
+    LiveEditHTML().init('.aaa');
+
+    // JavaScript code to handle form submission
+    document.getElementById("submitButton").addEventListener("click", function() {
+        var name = document.getElementById("textInput").value;
+        document.getElementById("output").innerText = "Hello, " + name + "!";
+    });
+</script>
+</body>
+</html>

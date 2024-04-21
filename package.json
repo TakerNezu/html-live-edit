@@ -1,0 +1,37 @@
+{
+  "name": "@takerunezu/live-edit-html",
+  "version": "0.1.0",
+  "description": "live-edit-html is a JavaScript library that changes your website into a temporarily editable website.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakerNezu/live-edit-html.git"
+  },
+  "author": "@takerunezu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TakerNezu/live-edit-html/issues"
+  },
+  "homepage": "https://github.com/TakerNezu/live-edit-html#readme",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
